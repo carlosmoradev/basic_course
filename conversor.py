@@ -5,4 +5,4 @@ pesos = float(pesos)
 valor_dolar = 3931.74
 dolares = pesos / valor_dolar
 
-print(f"{pesos} pesos equivale a {dolares:.2f} dolares.") # el :.2f redondea la cantidad de decimales a 2
+print(f"{pesos} pesos equivale a {dolares:.2f} dolares.") # el :.2f redondea la cantidad de decimales a 2.
