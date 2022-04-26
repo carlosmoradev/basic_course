@@ -1,5 +1,8 @@
 #Conversor de monedas entre pesos colombianos y dolares - ahora con menu
 
+def convierte():
+    pass
+
 menu = """
 Bienvenido al conversor de monedas
 
