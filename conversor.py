@@ -18,7 +18,7 @@ Ingresa la opcion correspondiente
 opcion = int(input(menu))
 
 if opcion == 1:
-    conversor("Colombianos", 4000)
+    conversor("Colombianos", 3975)
 elif opcion == 2:
     conversor("Argentinos", 65)
 elif opcion == 3:
