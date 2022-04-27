@@ -1,7 +1,9 @@
 #Conversor de monedas entre pesos colombianos y dolares - ahora con menu
 
-def convierte():
-    pass
+def conversor(moneda, valor_dolar):
+        pesos = float(input(f'Cuantos {moneda} tienes?: '))
+        dolares = pesos / valor_dolar
+        print(f"${int(pesos)} {moneda} pesos equivale a ${dolares:.2f} dolares.")
 
 menu = """
 Bienvenido al conversor de monedas
@@ -16,22 +18,10 @@ Ingresa la opcion correspondiente
 opcion = int(input(menu))
 
 if opcion == 1:
-    pesos = input('Cuantos pesos colombianos tienes?: ')
-    pesos = float(pesos)
-    valor_dolar = 3931.74
-    dolares = pesos / valor_dolar
-    print(f"{pesos} pesos equivale a {dolares:.2f} dolares.")
+    conversor("Colombianos", 4000)
 elif opcion == 2:
-    pesos = input('Cuantos pesos Argentinos tienes?: ')
-    pesos = float(pesos)
-    valor_dolar = 65
-    dolares = pesos / valor_dolar
-    print(f"{pesos} pesos Argentinos equivale a {dolares:.2f} dolares.")
+    conversor("Argentinos", 65)
 elif opcion == 3:
-    pesos = input('Cuantos pesos Mexicanos tienes?: ')
-    pesos = float(pesos)
-    valor_dolar = 24
-    dolares = pesos / valor_dolar
-    print(f"{pesos} pesos Mexicanos equivale a {dolares:.2f} dolares.")
+    conversor("Mexicanos", 24)
 else:
     print("Selecciona una opcion correcta")
